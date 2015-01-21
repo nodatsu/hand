@@ -24,8 +24,17 @@ class Hand {
   
   // set action
   void setAction() {    
-    indexFinger.swAmp.x         =  0;
-    indexFinger.swPitch.x       =  1.0;
-    indexFinger.swOrg.x         =  PI;
+    indexFinger.swAmp.x         =  PI / 4;
+    indexFinger.swPitch.x       =  0.2;
+    indexFinger.swOrg.x         =  PI / 4 * 3;
+
+    indexFinger.child.swAmp.x         =  PI / 4;
+    indexFinger.child.swPitch.x       =  0.2;
+    indexFinger.child.swOrg.x         = -PI / 4;
+
+    indexFinger.child.child.swAmp.x         =  PI / 4;
+    indexFinger.child.child.swPitch.x       =  0.2;
+    indexFinger.child.child.swOrg.x         = -PI / 4;
+
   }
 }
